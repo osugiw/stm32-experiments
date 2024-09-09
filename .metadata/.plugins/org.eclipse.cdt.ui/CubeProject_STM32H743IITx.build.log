@@ -1,0 +1,32 @@
+16:54:12 **** Incremental Build of configuration Debug for project CubeProject_STM32H743IITx ****
+make -j8 all 
+arm-none-eabi-g++ "../Drivers/BSP/emmc_flash/emmc.cpp" -mcpu=cortex-m7 -std=gnu++17 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/codec -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/BSP/emmc_flash/emmc.d" -MT"Drivers/BSP/emmc_flash/emmc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Drivers/BSP/emmc_flash/emmc.o"
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m7 -std=gnu++17 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32H743xx -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -I../Drivers/BSP/codec -I../FATFS/Target -I../FATFS/App -I../Middlewares/Third_Party/FatFs/src -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:245:21: warning: unused variable 'status' [-Wunused-variable]
+  245 |   HAL_StatusTypeDef status = HAL_I2SEx_TransmitReceive_DMA(&hi2s3, (uint16_t*) dac_buf_i2s, (uint16_t *) adc_buf_i2s, BUFFER_SIZE);
+      |                     ^~~~~~
+../Drivers/BSP/emmc_flash/emmc.cpp: In member function 'uint8_t EMMC::testFunc(uint8_t)':
+../Drivers/BSP/emmc_flash/emmc.cpp:146:31: warning: 'buffer' may be used uninitialized [-Wmaybe-uninitialized]
+  146 |                 if (emmc.write(buffer, sector, count)) {
+      |                     ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/BSP/emmc_flash/emmc.cpp:96:6: note: by argument 2 of type 'const uint8_t*' {aka 'const unsigned char*'} to 'bool EMMC::write(const uint8_t*, uint32_t, uint32_t)' declared here
+   96 | bool EMMC::write(const uint8_t *buffer, uint32_t sector, uint32_t count) {
+      |      ^~~~
+../Drivers/BSP/emmc_flash/emmc.cpp:131:17: note: 'buffer' declared here
+  131 |         uint8_t buffer[512]; // Buffer to store read data
+      |                 ^~~~~~
+arm-none-eabi-g++ -o "CubeProject_STM32H743IITx.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\Fiverr\5_Base Station\CubeProject_STM32H743IITx\STM32H743IITX_FLASH.ld" -Wl,-Map="CubeProject_STM32H743IITx.map" -Wl,--gc-sections -static -L"D:\Fiverr\5_Base Station\CubeProject_STM32H743IITx\Drivers\BSP\codec" -L"D:\Fiverr\5_Base Station\CubeProject_STM32H743IITx\Drivers\BSP\emmc_flash" -L"D:\Fiverr\5_Base Station\CubeProject_STM32H743IITx\Drivers\BSP\lte_modem" -L"D:\Fiverr\5_Base Station\CubeProject_STM32H743IITx\Drivers\BSP\rf_transceiver" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: CubeProject_STM32H743IITx.elf
+ 
+arm-none-eabi-size  CubeProject_STM32H743IITx.elf 
+arm-none-eabi-objdump -h -S CubeProject_STM32H743IITx.elf  > "CubeProject_STM32H743IITx.list"
+   text	   data	    bss	    dec	    hex	filename
+  51528	     44	   9876	  61448	   f008	CubeProject_STM32H743IITx.elf
+Finished building: default.size.stdout
+ 
+Finished building: CubeProject_STM32H743IITx.list
+ 
+
+16:54:14 Build Finished. 0 errors, 2 warnings. (took 2s.107ms)
+

@@ -1,0 +1,10 @@
+14:26:00 **** Build of configuration Debug for project RiceCooker_v0 ****
+make -j8 all 
+arm-none-eabi-size   RiceCooker_v0.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25196	     60	   2252	  27508	   6b74	RiceCooker_v0.elf
+Finished building: default.size.stdout
+ 
+
+14:26:01 Build Finished. 0 errors, 0 warnings. (took 437ms)
+

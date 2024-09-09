@@ -1,0 +1,14 @@
+2023-12-04 13:01:41,047 [INFO] Activator:176 - 
+
+
+2023-12-04 13:01:41,054 [INFO] Activator:177 - !SESSION log4j initialized
+2023-12-04 13:01:48,779 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-12-04 13:01:52,249 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-12-04 13:01:54,249 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-12-04 13:01:56,254 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-12-04 13:02:12,005 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-12-04 13:02:12,005 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-12-04 13:02:12,005 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2023-12-04 13:03:27,715 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-12-04 13:03:29,716 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2023-12-04 13:03:31,731 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out

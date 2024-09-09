@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;RiceCooker_v0/Core/Inc/ble_debug&apos; to &apos;ble_debug.h&apos;" description="Rename resource &apos;ble_debug&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/ble_debug" name="ble_debug.h" stamp="1691574275056" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;RiceCooker_v0/Core/Src/ble_debug&apos; to &apos;ble_debug.c&apos;" description="Rename resource &apos;ble_debug&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/ble_debug" name="ble_debug.c" stamp="1691574283659" updateReferences="true"/>
+</session>

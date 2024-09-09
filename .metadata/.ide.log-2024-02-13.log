@@ -1,0 +1,89 @@
+2024-02-13 10:45:56,062 [INFO] Activator:176 - 
+
+
+2024-02-13 10:45:56,078 [INFO] Activator:177 - !SESSION log4j initialized
+2024-02-13 10:46:02,575 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2024-02-13 10:46:04,978 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 10:46:06,981 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 10:46:08,983 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 10:46:24,712 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2024-02-13 10:46:24,712 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2024-02-13 10:46:24,712 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2024-02-13 11:04:34,887 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:04:36,896 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:04:38,903 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:04:50,782 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:04:52,792 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:04:54,795 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:58:41,505 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:58:43,512 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:58:45,521 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:58:47,565 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:58:49,577 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 11:58:51,586 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 14:41:56,994 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 14:41:59,005 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 14:42:01,014 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 14:42:03,050 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 14:42:05,060 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 14:42:07,072 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:08:39,175 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:08:41,178 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:08:43,178 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:08:45,200 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:08:47,200 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:08:49,201 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:19:53,411 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:19:55,413 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:19:57,413 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:19:59,438 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:20:01,440 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:20:03,441 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:24:48,466 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:24:50,467 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:24:52,469 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:24:54,495 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:24:56,497 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:24:58,498 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:29:10,284 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:29:12,286 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:29:14,287 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:29:28,140 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:29:30,141 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:29:32,142 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:32:28,074 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:32:30,076 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:32:32,077 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:32:34,099 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:32:36,101 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:32:38,103 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:41:11,109 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:41:13,111 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:41:15,112 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:41:17,137 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:41:19,138 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:41:21,140 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:49:11,836 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:49:13,847 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:49:15,848 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:49:17,870 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:49:19,872 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:49:21,872 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:53:48,212 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:53:50,213 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:53:52,214 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:53:54,237 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:53:56,238 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 15:53:58,239 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:04:51,235 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:04:53,242 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:04:55,255 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:28:12,755 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:28:14,767 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:28:16,782 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:28:18,806 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:28:20,822 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:28:22,836 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:32:18,243 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:32:20,257 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out
+2024-02-13 16:32:22,268 [ERROR] ConfigurationRetriever:142 - IOException on connection: connect timed out

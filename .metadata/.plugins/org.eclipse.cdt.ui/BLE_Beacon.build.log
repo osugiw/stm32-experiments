@@ -1,0 +1,10 @@
+15:10:05 **** Incremental Build of configuration Debug for project BLE_Beacon ****
+make -j8 all 
+arm-none-eabi-size   BLE_Beacon.elf 
+   text	   data	    bss	    dec	    hex	filename
+  53544	    222	  13307	  67073	  10601	BLE_Beacon.elf
+Finished building: default.size.stdout
+ 
+
+15:10:06 Build Finished. 0 errors, 0 warnings. (took 487ms)
+

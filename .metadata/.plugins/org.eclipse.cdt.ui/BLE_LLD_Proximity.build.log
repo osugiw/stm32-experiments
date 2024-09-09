@@ -1,0 +1,10 @@
+14:25:59 **** Build of configuration Debug for project BLE_LLD_Proximity ****
+make -j8 all 
+arm-none-eabi-size   BLE_LLD_Proximity.elf 
+   text	   data	    bss	    dec	    hex	filename
+  45912	    169	  18133	  64214	   fad6	BLE_LLD_Proximity.elf
+Finished building: default.size.stdout
+ 
+
+14:26:00 Build Finished. 0 errors, 0 warnings. (took 590ms)
+

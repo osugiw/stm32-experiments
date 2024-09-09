@@ -1,0 +1,6 @@
+1704353136034	Delete resource 'NFC06A1_PollingTagDetect'
+1704353157534	Delete resource 'blink_led'
+1704441073095	Delete resource 'NFC08A1_PollingTagDetect'
+1704443439177	Delete resource 'STM32L476RG_NUCLEO_FTM_NFC4'
+1704444046809	Delete resource 'BLE_Ota'
+1704444054257	Delete resource 'BLE_TransparentMode'

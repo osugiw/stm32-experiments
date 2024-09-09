@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;l6208_target_config.h, l6208.c, l6208.h, Release_Notes.html&apos; to &apos;l6208&apos;" description="Move 4 resources to &apos;l6208&apos;" destination="Drivers/BSP/Components/l6208" element1="Drivers/BSP/Components/l6208_target_config.h" element2="Drivers/BSP/Components/l6208.c" element3="Drivers/BSP/Components/l6208.h" element4="Drivers/BSP/Components/Release_Notes.html" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="4" stamp="1719566709527" updateReferences="true"/>
+</session>

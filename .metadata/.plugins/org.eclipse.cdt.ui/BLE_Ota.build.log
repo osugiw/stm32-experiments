@@ -1,0 +1,10 @@
+15:55:44 **** Incremental Build of configuration Release for project BLE_Ota ****
+make -j8 all 
+arm-none-eabi-size   BLE_Ota.elf 
+   text	   data	    bss	    dec	    hex	filename
+  17192	    300	  12575	  30067	   7573	BLE_Ota.elf
+Finished building: default.size.stdout
+ 
+
+15:55:44 Build Finished. 0 errors, 0 warnings. (took 491ms)
+

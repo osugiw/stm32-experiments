@@ -1,0 +1,18 @@
+14:20:55 **** Incremental Build of configuration Debug for project I2C_TwoBoards_ComPolling ****
+make -j8 all 
+arm-none-eabi-gcc "C:/Users/KDS-LTP-0415/STM32Cube/Repository/STM32Cube_FW_WB_V1.19.0/Projects/P-NUCLEO-WB55.Nucleo/Examples/I2C/I2C_TwoBoards_ComPolling/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32WB55xx -c -I../../../../../../../Drivers/BSP/P-NUCLEO-WB55.Nucleo -I../../../../../../../Drivers/CMSIS/Device/ST/STM32WBxx/Include -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc/Legacy -I../../../../../../../Drivers/STM32WBxx_HAL_Driver/Inc -I../../Inc -I../../../../../../../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Application/User/main.o"
+arm-none-eabi-gcc -o "I2C_TwoBoards_ComPolling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\KDS-LTP-0415\STM32Cube\Repository\STM32Cube_FW_WB_V1.19.0\Projects\P-NUCLEO-WB55.Nucleo\Examples\I2C\I2C_TwoBoards_ComPolling\STM32CubeIDE\STM32WB55RGVX_FLASH.ld" --specs=nosys.specs -Wl,-Map="I2C_TwoBoards_ComPolling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+C:/ST/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: I2C_TwoBoards_ComPolling.elf has a LOAD segment with RWX permissions
+Finished building target: I2C_TwoBoards_ComPolling.elf
+ 
+arm-none-eabi-size  I2C_TwoBoards_ComPolling.elf 
+arm-none-eabi-objdump -h -S I2C_TwoBoards_ComPolling.elf  > "I2C_TwoBoards_ComPolling.list"
+   text	   data	    bss	    dec	    hex	filename
+  13280	    208	   1816	  15304	   3bc8	I2C_TwoBoards_ComPolling.elf
+Finished building: default.size.stdout
+ 
+Finished building: I2C_TwoBoards_ComPolling.list
+ 
+
+14:20:56 Build Finished. 0 errors, 1 warnings. (took 1s.37ms)
+

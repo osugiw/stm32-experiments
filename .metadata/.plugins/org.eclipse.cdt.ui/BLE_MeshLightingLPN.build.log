@@ -1,0 +1,10 @@
+16:44:14 **** Incremental Build of configuration Debug for project BLE_MeshLightingLPN ****
+make -j8 all 
+arm-none-eabi-size   BLE_MeshLightingLPN.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 188788	    378	  34647	 223813	  36a45	BLE_MeshLightingLPN.elf
+Finished building: default.size.stdout
+ 
+
+16:44:14 Build Finished. 0 errors, 0 warnings. (took 440ms)
+

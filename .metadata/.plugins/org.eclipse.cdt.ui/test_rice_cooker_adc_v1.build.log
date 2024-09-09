@@ -1,0 +1,10 @@
+14:26:02 **** Build of configuration Debug for project test_rice_cooker_adc_v1 ****
+make -j8 all 
+arm-none-eabi-size   test_rice_cooker_adc_v1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10372	     20	   1780	  12172	   2f8c	test_rice_cooker_adc_v1.elf
+Finished building: default.size.stdout
+ 
+
+14:26:03 Build Finished. 0 errors, 0 warnings. (took 386ms)
+

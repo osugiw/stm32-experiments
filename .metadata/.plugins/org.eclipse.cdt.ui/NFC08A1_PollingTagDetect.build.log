@@ -1,0 +1,10 @@
+14:28:16 **** Incremental Build of configuration Debug for project NFC08A1_PollingTagDetect ****
+make -j8 all 
+arm-none-eabi-size  NFC08A1_PollingTagDetect.elf 
+   text	   data	    bss	    dec	    hex	filename
+  96656	    352	   8520	 105528	  19c38	NFC08A1_PollingTagDetect.elf
+Finished building: default.size.stdout
+ 
+
+14:28:17 Build Finished. 0 errors, 0 warnings. (took 424ms)
+

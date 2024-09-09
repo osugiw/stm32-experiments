@@ -1,0 +1,10 @@
+14:09:29 **** Incremental Build of configuration Debug for project BLE_HeartRate_ota ****
+make -j8 all 
+arm-none-eabi-size   BLE_HeartRate_ota.elf 
+   text	   data	    bss	    dec	    hex	filename
+  65264	    242	  13455	  78961	  13471	BLE_HeartRate_ota.elf
+Finished building: default.size.stdout
+ 
+
+14:09:29 Build Finished. 0 errors, 0 warnings. (took 451ms)
+

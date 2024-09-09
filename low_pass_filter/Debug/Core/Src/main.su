@@ -1,0 +1,6 @@
+../Core/Src/main.c:105:10:RC_Filter	24	static
+../Core/Src/main.c:111:9:ntc_temperature	16	static
+../Core/Src/main.c:132:6:HAL_ADC_ConvCpltCallback	24	static
+../Core/Src/main.c:209:6:SystemClock_Config	80	static,ignoring_inline_asm
+../Core/Src/main.c:144:5:main	48	static,ignoring_inline_asm
+../Core/Src/main.c:397:6:Error_Handler	0	static,ignoring_inline_asm

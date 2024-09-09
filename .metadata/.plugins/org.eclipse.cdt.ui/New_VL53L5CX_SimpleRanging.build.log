@@ -1,0 +1,10 @@
+10:51:07 **** Incremental Build of configuration Debug for project New_VL53L5CX_SimpleRanging ****
+make -j8 all 
+arm-none-eabi-size  New_VL53L5CX_SimpleRanging.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 140540	    528	   8456	 149524	  24814	New_VL53L5CX_SimpleRanging.elf
+Finished building: default.size.stdout
+ 
+
+10:51:08 Build Finished. 0 errors, 0 warnings. (took 448ms)
+

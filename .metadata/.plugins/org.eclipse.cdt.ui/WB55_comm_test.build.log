@@ -1,0 +1,10 @@
+14:17:22 **** Incremental Build of configuration Debug for project WB55_comm_test ****
+make -j8 all 
+arm-none-eabi-size  WB55_comm_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+  24560	     12	   2788	  27360	   6ae0	WB55_comm_test.elf
+Finished building: default.size.stdout
+ 
+
+14:17:22 Build Finished. 0 errors, 0 warnings. (took 266ms)
+

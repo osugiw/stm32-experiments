@@ -1,0 +1,196 @@
+
+#include "emmc.hpp"
+#include <string.h>
+#include "ff_gen_drv.h"
+// Global instance of EMMC
+EMMC emmc;
+
+/**
+ * @brief Disk status callback for the FatFS library.
+ * @param pdrv Physical drive number.
+ * @return Disk status.
+ */
+DSTATUS EMMC_status (BYTE pdrv){
+    if (pdrv != 0) {
+        return STA_NOINIT;
+    }
+    return 0;
+}
+
+/**
+ * @brief Initialize the eMMC disk.
+ * @param pdrv Physical drive number.
+ * @return Disk status after initialization.
+ */
+DSTATUS EMMC_initialize (BYTE pdrv){
+    if (pdrv != 0) {
+        return STA_NOINIT;
+    }
+    return 0;
+}
+
+/**
+ * @brief Read from the eMMC disk.
+ * @param pdrv Physical drive number.
+ * @param buff Buffer to store read data.
+ * @param sector Starting sector number.
+ * @param count Number of sectors to read.
+ * @return Result of read operation.
+ */
+DRESULT EMMC_read (BYTE pdrv, BYTE *buff, DWORD sector, UINT count){
+    if (pdrv != 0) {
+        return RES_PARERR;
+    }
+    return emmc.read(buff, sector, count) ? RES_OK : RES_ERROR;
+}
+
+/**
+ * @brief Write to the eMMC disk.
+ * @param pdrv Physical drive number.
+ * @param buff Buffer containing data to write.
+ * @param sector Starting sector number.
+ * @param count Number of sectors to write.
+ * @return Result of write operation.
+ */
+DRESULT EMMC_write (BYTE pdrv, const BYTE *buff, DWORD sector, UINT count){
+    if (pdrv != 0) {
+        return RES_PARERR;
+    }
+    return emmc.write(buff, sector, count) ? RES_OK : RES_ERROR;
+}
+
+/**
+ * @brief Perform IO control operations on the eMMC disk.
+ * @param pdrv Physical drive number.
+ * @param cmd Control command to execute.
+ * @param buff Buffer to store command results.
+ * @return Result of control operation.
+ */
+DRESULT EMMC_ioctl (BYTE pdrv, BYTE cmd, void *buff){
+    if (pdrv != 0) {
+        return RES_PARERR;
+    }
+    return emmc.ioctl(cmd, buff) ? RES_OK : RES_ERROR;
+}
+
+
+EMMC::EMMC(){
+}
+
+EMMC::~EMMC() {
+}
+
+bool EMMC::read(uint8_t *buffer, uint32_t sector, uint32_t count) {
+    if (HAL_MMC_ReadBlocks(MMC_INTERFACE, buffer, sector, count, HAL_MAX_DELAY) != HAL_OK) {
+        return false;
+    }
+    while(HAL_MMC_GetCardState(MMC_INTERFACE) != HAL_MMC_CARD_TRANSFER) {}
+	return true;
+}
+
+bool EMMC::write(const uint8_t *buffer, uint32_t sector, uint32_t count) {
+    if (HAL_MMC_WriteBlocks(MMC_INTERFACE, (uint8_t*)buffer, sector, count, HAL_MAX_DELAY) != HAL_OK) {
+        return false;
+    }
+    while(HAL_MMC_GetCardState(MMC_INTERFACE) != HAL_MMC_CARD_TRANSFER) {}
+	return true;
+}
+
+bool EMMC::ioctl(uint8_t cmd, void *buff) {
+    switch (cmd) {
+        case CTRL_SYNC:
+            return HAL_MMC_GetCardState(MMC_INTERFACE) == HAL_MMC_CARD_TRANSFER;
+        case GET_SECTOR_COUNT:
+            *(uint32_t*)buff = hmmc1.MmcCard.BlockNbr;
+            return true;
+        case GET_SECTOR_SIZE:
+            *(uint32_t*)buff = hmmc1.MmcCard.BlockSize;
+            return true;
+        case GET_BLOCK_SIZE:
+            *(uint32_t*)buff = hmmc1.MmcCard.LogBlockNbr / hmmc1.MmcCard.BlockNbr;
+            return true;
+
+        default:
+            return false;
+    }
+}
+
+/*
+ * @brief For testing the EMMC Modules
+ * @oaram Option for testing the case
+ * @return none
+ * */
+void testFunc(uint8_t _opt)
+{
+	uint8_t buffer[512]; // Buffer to store read data
+	uint32_t sector = 0; // Start sector
+	uint32_t count = 1;  // Number of sectors to read
+
+	switch(_opt){
+	// Read data from EMMC
+	case 1:
+		if (emmc.read(buffer, sector, count)) {
+//		    printf("Read Successful\n");
+		} else {
+//		    printf("Read Failed\n");
+		}
+		break;
+	// Write data to EMMC
+	case 2:
+		if (emmc.write(buffer, sector, count)) {
+//		    printf("Write Successful\n");
+		} else {
+//		    printf("Write Failed\n");
+		}
+		break;
+	// IOCTL Operations
+	case 3:
+		DWORD sectorCount;
+		if (emmc.ioctl(GET_SECTOR_COUNT, &sectorCount)) {
+//		    printf("Sector Count: %lu\n", sectorCount);
+		} else {
+//		    printf("IOCTL Failed\n");
+		}
+		break;
+//	// FatFs
+//	case 4:
+//		// Mount the file system
+//		if (f_mount(&fs, "", 1) == FR_OK) {
+//			printf("File system mounted successfully\n");
+//		} else {
+//			printf("Failed to mount file system\n");
+//			return 1;
+//		}
+//
+//		// Open a file
+//		if (f_open(&fil, "test.txt", FA_CREATE_ALWAYS | FA_WRITE) == FR_OK) {
+//			printf("File opened successfully\n");
+//			// Write data to the file
+//			f_printf(&fil, "Hello, world!\n");
+//			// Close the file
+//			f_close(&fil);
+//		} else {
+//			printf("Failed to open file\n");
+//			return 1;
+//		}
+//
+//		// Open the file for reading
+//		if (f_open(&fil, "test.txt", FA_READ) == FR_OK) {
+//			printf("File opened successfully for reading\n");
+//			char buffer[64];
+//			// Read data from the file
+//			while (f_gets(buffer, sizeof(buffer), &fil)) {
+//				printf("%s", buffer);
+//			}
+//			// Close the file
+//			f_close(&fil);
+//		} else {
+//			printf("Failed to open file for reading\n");
+//			return 1;
+//		}
+//
+//		// Unmount the file system
+//		f_mount(NULL, "", 1);
+//		break;
+	}
+}

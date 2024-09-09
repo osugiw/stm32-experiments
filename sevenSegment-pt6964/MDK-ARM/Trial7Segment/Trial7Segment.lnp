@@ -1,0 +1,28 @@
+--cpu Cortex-M0+
+"trial7segment\startup_stm32g070xx.o"
+"trial7segment\main.o"
+"trial7segment\stm32g0xx_it.o"
+"trial7segment\stm32g0xx_hal_msp.o"
+"trial7segment\stm32g0xx_hal_rtc.o"
+"trial7segment\stm32g0xx_hal_rtc_ex.o"
+"trial7segment\stm32g0xx_hal_rcc.o"
+"trial7segment\stm32g0xx_hal_rcc_ex.o"
+"trial7segment\stm32g0xx_ll_rcc.o"
+"trial7segment\stm32g0xx_hal_flash.o"
+"trial7segment\stm32g0xx_hal_flash_ex.o"
+"trial7segment\stm32g0xx_hal_gpio.o"
+"trial7segment\stm32g0xx_hal_dma.o"
+"trial7segment\stm32g0xx_hal_dma_ex.o"
+"trial7segment\stm32g0xx_ll_dma.o"
+"trial7segment\stm32g0xx_hal_pwr.o"
+"trial7segment\stm32g0xx_hal_pwr_ex.o"
+"trial7segment\stm32g0xx_hal_cortex.o"
+"trial7segment\stm32g0xx_hal.o"
+"trial7segment\stm32g0xx_hal_exti.o"
+"trial7segment\stm32g0xx_hal_tim.o"
+"trial7segment\stm32g0xx_hal_tim_ex.o"
+"trial7segment\system_stm32g0xx.o"
+--library_type=microlib --strict --scatter "Trial7Segment\Trial7Segment.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Trial7Segment.map" -o Trial7Segment\Trial7Segment.axf

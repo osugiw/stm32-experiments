@@ -1,0 +1,10 @@
+15:47:01 **** Incremental Build of configuration Debug for project BLE_p2pServer_ota ****
+make -j8 all 
+arm-none-eabi-size   BLE_p2pServer_ota.elf 
+   text	   data	    bss	    dec	    hex	filename
+  64360	    230	  13459	  78049	  130e1	BLE_p2pServer_ota.elf
+Finished building: default.size.stdout
+ 
+
+15:47:02 Build Finished. 0 errors, 0 warnings. (took 376ms)
+

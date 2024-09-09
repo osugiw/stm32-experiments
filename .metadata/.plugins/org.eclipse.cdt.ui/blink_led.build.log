@@ -1,0 +1,10 @@
+11:21:33 **** Build of configuration Debug for project blink_led ****
+make -j8 all 
+arm-none-eabi-size   blink_led.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21452	    124	   8476	  30052	   7564	blink_led.elf
+Finished building: default.size.stdout
+ 
+
+11:21:34 Build Finished. 0 errors, 0 warnings. (took 611ms)
+

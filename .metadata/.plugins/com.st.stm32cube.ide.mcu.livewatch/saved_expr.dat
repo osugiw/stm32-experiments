@@ -1,0 +1,9 @@
+systemState
+UART_system
+NTC
+systemTimer
+cookingPhase
+rawADC
+adcValue
+tx_buffer
+buttonsLED

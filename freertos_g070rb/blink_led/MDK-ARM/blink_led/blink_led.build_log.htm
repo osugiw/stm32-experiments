@@ -1,0 +1,2215 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.37.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: osw KDS-LTP, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.37.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.18
+Assembler:       Armasm.exe V6.18
+Linker/Locator:  ArmLink.exe V6.18
+Library Manager: ArmAr.exe V6.18
+Hex Converter:   FromElf.exe V6.18
+CPU DLL:         SARMCM3.DLL V5.37.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+D:\Self-Learning\learn-stm32\freertos_g070rb\blink_led\MDK-ARM\blink_led.uvprojx
+Project File Date:  06/12/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.18', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'blink_led'
+assembling startup_stm32g070xx.s...
+compiling app_freertos.c...
+compiling stm32g0xx_it.c...
+compiling stm32g0xx_hal_msp.c...
+compiling stm32g0xx_hal_timebase_tim.c...
+compiling main.c...
+compiling stm32g0xx_hal_rcc_ex.c...
+compiling stm32g0xx_hal_rcc.c...
+compiling stm32g0xx_hal_flash_ex.c...
+compiling stm32g0xx_hal_gpio.c...
+compiling stm32g0xx_hal_flash.c...
+compiling stm32g0xx_hal_pwr.c...
+compiling stm32g0xx_hal_dma_ex.c...
+compiling stm32g0xx_hal_pwr_ex.c...
+compiling stm32g0xx_hal_dma.c...
+compiling stm32g0xx_hal_cortex.c...
+compiling stm32g0xx_hal.c...
+compiling stm32g0xx_hal_exti.c...
+compiling stm32g0xx_hal_uart_ex.c...
+compiling croutine.c...
+compiling system_stm32g0xx.c...
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(98): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxEventGroupBuffer );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(106): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xSize == sizeof( EventGroup_t ) );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(198): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( uxBitsToWaitFor & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(199): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxBitsToWaitFor != 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(202): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(320): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xEventGroup );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(321): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( uxBitsToWaitFor & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(322): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxBitsToWaitFor != 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(325): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(468): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xEventGroup );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(469): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( uxBitsToClear & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(530): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xEventGroup );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(531): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( uxBitsToSet & eventEVENT_BITS_CONTROL_BYTES ) == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c(626): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( pxTasksWaitingForBits->xListEnd.pxNext != ( const ListItem_t * ) &( pxTasksWaitingForBits->xListEnd ) );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+14 warnings generated.
+compiling event_groups.c...
+compiling stm32g0xx_hal_tim_ex.c...
+compiling list.c...
+compiling stm32g0xx_hal_uart.c...
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(232): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xBufferSizeBytes > sbBYTES_TO_STORE_MESSAGE_LENGTH );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(238): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xBufferSizeBytes > 0 );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(240): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTriggerLevelBytes <= xBufferSizeBytes );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(293): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pucStreamBufferStorageArea );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(294): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxStaticStreamBuffer );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(295): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTriggerLevelBytes <= xBufferSizeBytes );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(319): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xBufferSizeBytes > sbBYTES_TO_STORE_MESSAGE_LENGTH );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(327): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xSize == sizeof( StreamBuffer_t ) );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(363): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(401): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(446): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(475): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(499): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(516): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pvTxData );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(517): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(528): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xRequiredSpace > xDataLengthBytes );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(553): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                        configASSERT( pxStreamBuffer->xTaskWaitingToSend == NULL );
+                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(619): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pvTxData );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(620): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(721): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pvRxData );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(722): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(757): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( pxStreamBuffer->xTaskWaitingToReceive == NULL );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(823): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(848): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xBytesAvailable == 0 );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(869): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pvRxData );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(870): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(976): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(999): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1034): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1064): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxStreamBuffer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1092): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xCount > ( size_t ) 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1102): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( xNextHead + xFirstLength ) <= pxStreamBuffer->xLength );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1110): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( ( xCount - xFirstLength ) <= pxStreamBuffer->xLength );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1152): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xFirstLength <= xMaxCount );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1153): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( ( xNextTail + xFirstLength ) <= pxStreamBuffer->xLength );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1161): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xCount <= xMaxCount );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c(1224): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( memset( pucBuffer, ( int ) xWriteValue, xBufferSizeBytes ) == pucBuffer );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+37 warnings generated.
+compiling stream_buffer.c...
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(259): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(314): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(318): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxStaticQueue != NULL );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(322): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( pucQueueStorage != NULL ) && ( uxItemSize == 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(323): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( pucQueueStorage == NULL ) && ( uxItemSize != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(331): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xSize == sizeof( Queue_t ) );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(374): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxQueueLength > ( UBaseType_t ) 0 );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(567): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xSemaphore );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(594): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxMutex );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(649): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxMutex );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(690): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxMaxCount != 0 );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(691): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxInitialCount <= uxMaxCount );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(718): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxMaxCount != 0 );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(719): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxInitialCount <= uxMaxCount );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(746): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(747): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(748): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(751): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(956): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(957): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(958): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1124): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1128): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue->uxItemSize == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1133): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX ) && ( pxQueue->u.xSemaphore.xMutexHolder != NULL ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1284): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( pxQueue ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1288): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1293): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1429): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( pxQueue ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1433): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue->uxItemSize == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1438): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1509): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                                configASSERT( xInheritanceOccurred == pdFALSE );
+                                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1644): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( pxQueue ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1648): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1653): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1791): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1792): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1883): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1884): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1885): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue->uxItemSize != 0 ); /* Can't peek a semaphore. */
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1934): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1951): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1968): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(1979): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(2317): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/queue.c(2357): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxQueue );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+45 warnings generated.
+compiling queue.c...
+compiling stm32g0xx_hal_tim.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(151): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                        configASSERT( ( xWantedSize & portBYTE_ALIGNMENT_MASK ) == 0 );
+                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(196): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                                configASSERT( ( ( ( size_t ) pxNewBlockLink ) & portBYTE_ALIGNMENT_MASK ) == 0 );
+                                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(261): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( ( ( size_t ) pvReturn ) & ( size_t ) portBYTE_ALIGNMENT_MASK ) == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(281): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( ( pxLink->xBlockSize & xBlockAllocatedBit ) != 0 );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c(282): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxLink->pxNextFreeBlock == NULL );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+5 warnings generated.
+compiling heap_4.c...
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(275): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xReturn );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(324): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xSize == sizeof( Timer_t ) );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(330): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxTimerBuffer );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(357): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( xTimerPeriodInTicks > 0 ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(386): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(428): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( ( xTimerTaskHandle != NULL ) );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(437): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(446): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(467): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(492): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(502): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(529): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xResult );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(753): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( pxCallback );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(812): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                                        configASSERT( xResult );
+                                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(836): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                        configASSERT( ( pxTimer->xTimerPeriodInTicks > 0 ) );
+                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(925): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( xResult );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(997): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(1022): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(1038): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( xTimer );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/timers.c(1082): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTimerQueue );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+20 warnings generated.
+compiling timers.c...
+compiling cmsis_os2.c...
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(592): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( puxStackBuffer != NULL );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(593): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxTaskBuffer != NULL );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(601): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( xSize == sizeof( TCB_t ) );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(868): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( ( ( ( portPOINTER_SIZE_TYPE ) pxTopOfStack & ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) == 0UL ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1242): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( uxSchedulerSuspended == 0 );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1262): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxPreviousWakeTime );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1263): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( ( xTimeIncrement > 0U ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1264): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( uxSchedulerSuspended == 0 );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1348): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( uxSchedulerSuspended == 0 );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1392): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxTCB );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1546): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( ( uxNewPriority < configMAX_PRIORITIES ) );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1772): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( uxSchedulerSuspended == 0 );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1814): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTask );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1856): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTaskToResume );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(1911): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTaskToResume );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2047): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                portDISABLE_INTERRUPTS();
+                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2090): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2104): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        portDISABLE_INTERRUPTS();
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2201): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxSchedulerSuspended );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2365): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxTCB );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2615): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxSchedulerSuspended == 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(2729): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        taskSWITCH_DELAYED_LISTS();
+                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(203): note: expanded from macro 'taskSWITCH_DELAYED_LISTS'
+        configASSERT( ( listLIST_IS_EMPTY( pxDelayedTaskList ) ) );                                                                             \
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3041): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                taskSELECT_HIGHEST_PRIORITY_TASK(); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(140): note: expanded from macro 'taskSELECT_HIGHEST_PRIORITY_TASK'
+                        configASSERT( uxTopPriority );                                                                                                                          \
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3066): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxEventList );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3083): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxEventList );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3087): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxSchedulerSuspended != 0 );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3109): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( pxEventList );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3157): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxUnblockedTCB );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3212): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxSchedulerSuspended != pdFALSE );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3220): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxUnblockedTCB );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3256): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxTimeOut );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3278): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxTimeOut );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3279): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( pxTicksToWait );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(3933): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( pxTCB->ucStaticallyAllocated == tskSTATICALLY_ALLOCATED_STACK_AND_TCB     );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4115): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( pxTCB == pxCurrentTCB );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4116): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( pxTCB->uxMutexesHeld );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4194): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                        configASSERT( pxTCB->uxMutexesHeld );
+                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4221): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                        configASSERT( pxTCB != pxCurrentTCB );
+                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4789): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTaskToNotify );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4838): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                        configASSERT( pxTCB->ulNotifiedValue == ~0UL );
+                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4853): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4904): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTaskToNotify );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4971): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                        configASSERT( pxTCB->ulNotifiedValue == ~0UL );
+                                        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(4982): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(5032): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                configASSERT( xTaskToNotify );
+                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/tasks.c(5070): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include/task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+46 warnings generated.
+compiling tasks.c...
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(153): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxCriticalNesting == ~0UL );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(154): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        portDISABLE_INTERRUPTS();
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(166): error: expected '(' after 'asm'
+__asm void prvPortStartFirstTask( void )
+      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(166): error: expected ';' after top-level asm block
+__asm void prvPortStartFirstTask( void )
+     ^
+     ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(168): warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+        extern pxCurrentTCB;
+        ~~~~~~ ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(170): error: use of undeclared identifier 'PRESERVE8'
+        PRESERVE8
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(223): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxCriticalNesting == 1000UL );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(234): warning: implicit declaration of function '__dsb' is invalid in C99 [-Wimplicit-function-declaration]
+        __dsb( portSY_FULL_READ_WRITE );
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(235): warning: implicit declaration of function '__isb' is invalid in C99 [-Wimplicit-function-declaration]
+        __isb( portSY_FULL_READ_WRITE );
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(241): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+    portDISABLE_INTERRUPTS();
+    ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(243): warning: implicit declaration of function '__dsb' is invalid in C99 [-Wimplicit-function-declaration]
+        __dsb( portSY_FULL_READ_WRITE );
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(244): warning: implicit declaration of function '__isb' is invalid in C99 [-Wimplicit-function-declaration]
+        __isb( portSY_FULL_READ_WRITE );
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(250): warning: implicit declaration of function '__disable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+        configASSERT( uxCriticalNesting );
+        ^
+../Core/Inc\FreeRTOSConfig.h(129): note: expanded from macro 'configASSERT'
+#define configASSERT( x ) if ((x) == 0) {taskDISABLE_INTERRUPTS(); for( ;; );}
+                                         ^
+../Middlewares/Third_Party/FreeRTOS/Source/include\task.h(212): note: expanded from macro 'taskDISABLE_INTERRUPTS'
+#define taskDISABLE_INTERRUPTS()        portDISABLE_INTERRUPTS()
+                                        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(96): note: expanded from macro 'portDISABLE_INTERRUPTS'
+#define portDISABLE_INTERRUPTS()                                __disable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(254): warning: implicit declaration of function '__enable_irq' is invalid in C99 [-Wimplicit-function-declaration]
+                portENABLE_INTERRUPTS();
+                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0\portmacro.h(97): note: expanded from macro 'portENABLE_INTERRUPTS'
+#define portENABLE_INTERRUPTS()                                 __enable_irq()
+                                                                ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(259): error: expected '(' after 'asm'
+__asm uint32_t ulSetInterruptMaskFromISR( void )
+      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(259): error: expected ';' after top-level asm block
+__asm uint32_t ulSetInterruptMaskFromISR( void )
+     ^
+     ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(261): error: use of undeclared identifier 'mrs'
+        mrs r0, PRIMASK
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(267): error: expected '(' after 'asm'
+__asm void vClearInterruptMaskFromISR( uint32_t ulMask )
+      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(267): error: expected ';' after top-level asm block
+__asm void vClearInterruptMaskFromISR( uint32_t ulMask )
+     ^
+     ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(269): error: use of undeclared identifier 'msr'
+        msr PRIMASK, r0
+        ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(274): error: expected '(' after 'asm'
+__asm void xPortPendSVHandler( void )
+      ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(274): error: expected ';' after top-level asm block
+__asm void xPortPendSVHandler( void )
+     ^
+     ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(276): error: unknown type name 'vTaskSwitchContext'
+        extern vTaskSwitchContext
+               ^
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(277): warning: duplicate 'extern' declaration specifier [-Wduplicate-decl-specifier]
+        extern pxCurrentTCB
+        ^~~~~~~
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(277): error: expected ';' at end of declaration
+        extern pxCurrentTCB
+                           ^
+                           ;
+../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM0/port.c(343): error: unknown type name '__weak'
+        __weak void vPortSetupTimerInterrupt( void )
+        ^
+12 warnings and 14 errors generated.
+compiling port.c...
+"blink_led\blink_led.axf" - 14 Error(s), 179 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32G0xx_DFP.1.4.0.pack
+                Keil.STM32G0xx_DFP.1.4.0
+                STMicroelectronics STM32G0 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_blink_led
+  C:/Users/KDS-LTP-0415/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/KDS-LTP-0415/AppData/Local/Arm/Packs/Keil/STM32G0xx_DFP/1.4.0/Drivers/CMSIS/Device/ST/STM32G0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:18
+</pre>
+</body>
+</html>

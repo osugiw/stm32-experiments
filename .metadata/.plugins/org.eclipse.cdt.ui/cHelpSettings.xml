@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cHelpSettings>
+        
+    <project name="VL53L5CX_SimpleRanging">
+                
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+            
+    </project>
+    
+    <project name="CubeProject_STM32H743IITx">
+        <provider id="org.eclipse.cdt.ui.provider1"/>
+    </project>
+</cHelpSettings>

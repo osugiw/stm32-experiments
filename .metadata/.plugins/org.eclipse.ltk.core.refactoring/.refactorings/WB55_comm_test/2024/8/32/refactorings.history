@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;WB55_comm_test/Core/Src/alc5616.cpp&apos; to &apos;alc5616.c&apos;" description="Rename resource &apos;alc5616.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/alc5616.cpp" name="alc5616.c" stamp="1723092413768" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;WB55_comm_test/Core/Inc/alc5616.hpp&apos; to &apos;alc5616.h&apos;" description="Rename resource &apos;alc5616.hpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/alc5616.hpp" name="alc5616.h" stamp="1723092426706" updateReferences="true"/>
+</session>

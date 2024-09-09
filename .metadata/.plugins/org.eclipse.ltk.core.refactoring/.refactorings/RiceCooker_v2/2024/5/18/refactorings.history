@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RiceCooker_v2/Core/Src/buzzer_control&apos; to &apos;buzzer_control.c&apos;" description="Rename resource &apos;buzzer_control&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/buzzer_control" name="buzzer_control.c" stamp="1714727970175" updateReferences="true"/>
+</session>
